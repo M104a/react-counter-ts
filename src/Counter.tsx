@@ -1,3 +1,4 @@
+import type { CSSProperties } from 'react';
 import { useState } from "react";
 import { MoonIcon,StarIcon } from "@heroicons/react/24/outline"; // ※線タイプの場合
 
@@ -47,7 +48,7 @@ const Counter = () => {
     cursor: "pointer",
   };
 
-  const containerStyle = {
+  const containerStyle: CSSProperties  = {
     textAlign: "center",
     marginTop: "50px",
     backgroundColor: isDarkMode ? "#a4a8d4" : "#f5f5f5",
